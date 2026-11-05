@@ -1,0 +1,47 @@
+name: Atualizar gráfico de commits
+
+on:
+  schedule:
+    - cron: '23 11 * * *'
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/update-commit-chart.yml'
+      - 'scripts/update_commit_chart.py'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: profile-commit-chart
+
+jobs:
+  update-chart:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    env:
+      TZ: America/Sao_Paulo
+    steps:
+      - uses: actions/checkout@v6
+
+      - name: Ler os históricos públicos e gerar o gráfico
+        run: |
+          git clone --no-checkout --filter=blob:none --single-branch --branch main \
+            https://github.com/SkyKyuu/skykyuu-frontend.git "$RUNNER_TEMP/skykyuu-frontend"
+          git clone --no-checkout --filter=blob:none --single-branch --branch main \
+            https://github.com/SkyKyuu/skykyuu-backend.git "$RUNNER_TEMP/skykyuu-backend"
+          python3 scripts/update_commit_chart.py "$RUNNER_TEMP/skykyuu-frontend" "$RUNNER_TEMP/skykyuu-backend"
+
+      - name: Publicar se o gráfico mudou
+        run: |
+          git add -- profile/assets/commits.svg
+          if git diff --cached --quiet; then
+            echo "O gráfico já está atualizado."
+            exit 0
+          fi
+          git -c user.name='github-actions[bot]' \
+              -c user.email='41898282+github-actions[bot]@users.noreply.github.com' \
+              commit -m 'Atualiza o gráfico de commits da SkyKyuu'
+          git push origin HEAD:main

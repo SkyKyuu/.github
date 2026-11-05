@@ -6,12 +6,14 @@
 
 No navegador, a cena roda com Babylon.js e tem controles locais por teclado e gamepad. No servidor, o núcleo de simulação em Java já trata a trajetória da bola e o contato com o jogador. Para o multiplayer online, a arquitetura prevista deixa o servidor responsável pelas regras, pelo estado da partida e pela validação das jogadas.
 
+No futuro, o SkyKyuu também pode ganhar uma versão em aplicativo.
+
 ### Onde o jogo toma forma
 
-| Repositório | O que você encontra | Linguagens |
+| Repositório | O que você encontra | Linguagens e tecnologias |
 | --- | --- | --- |
-| [Frontend](https://github.com/SkyKyuu/skykyuu-frontend) | Quadra 3D, câmeras, controles e protótipo jogável com React e Babylon.js | TypeScript, JavaScript, HTML e CSS |
-| [Backend](https://github.com/SkyKyuu/skykyuu-backend) | Núcleo de simulação e serviço com Spring Boot e WebFlux | Java |
+| [Frontend](https://github.com/SkyKyuu/skykyuu-frontend) | Quadra 3D, câmeras, controles e protótipo jogável | TypeScript, JavaScript, HTML e CSS<br>React, Babylon.js, Vite, Tailwind CSS e Vitest |
+| [Backend](https://github.com/SkyKyuu/skykyuu-backend) | Núcleo de simulação e serviço do jogo | Java 25<br>Spring Boot, Spring WebFlux, Reactor Netty e Maven Wrapper |
 | [Especificações](https://github.com/SkyKyuu/skykyuu-specs) | Repositório reservado para a documentação, ainda vazio em 5 de novembro de 2026 | — |
 
 ## Diário de quadra
@@ -22,4 +24,4 @@ No navegador, a cena roda com Babylon.js e tem controles locais por teclado e ga
 
 ### Quem constrói o jogo
 
-**[Eduardo Tamborelli Ferreira Lino](https://github.com/Eduardo-Tamborelli-Ferreira-lino)** contribui com o frontend e o backend. É o autor identificado pelo GitHub nos históricos públicos dos dois repositórios neste recorte.
+**[Eduardo Tamborelli Ferreira Lino](https://github.com/Eduardo-Tamborelli-Ferreira-lino)** · Criador e desenvolvedor full stack

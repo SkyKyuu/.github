@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 896 264" width="896" height="264" role="img" aria-labelledby="title desc">
+  <title id="title">SkyKyuu · Wings Over the Court</title>
+  <desc id="desc">O nome do jogo ao lado de uma quadra terracota vista de cima, com uma bola em movimento.</desc>
+  <defs>
+    <clipPath id="panel"><rect width="896" height="264" rx="18"/></clipPath>
+    <clipPath id="ball"><circle cx="727" cy="96" r="26"/></clipPath>
+    <pattern id="net" width="7" height="7" patternUnits="userSpaceOnUse">
+      <path d="M0 0h7M0 0v7" fill="none" stroke="#fff4e9" stroke-width="1" opacity=".48"/>
+    </pattern>
+  </defs>
+  <g clip-path="url(#panel)">
+    <path fill="#101822" d="M0 0h896v264H0z"/>
+    <path fill="#1d2937" d="M552 0h344v264H552z"/>
+    <path fill="#ae562e" d="M552 0h344v264H552z" transform="translate(34 30) scale(.96 .773) translate(-12 0)"/>
+    <path d="M552 0v264" stroke="#334150"/>
+    <g fill="none" stroke="#ffe9d7" stroke-width="2">
+      <path d="M572 53h304v158H572zM673 53v158m102-158v158" opacity=".8"/>
+      <path d="M724 45v174" opacity=".9"/>
+      <rect x="724" y="45" width="10" height="174" fill="url(#net)" stroke-width="1" opacity=".7"/>
+      <path d="M597 169c33-40 60-63 96-73m-78 83c25-25 45-42 67-52" stroke-linecap="round" opacity=".73"/>
+    </g>
+    <circle cx="727" cy="96" r="33" fill="#101822" opacity=".22"/>
+    <circle cx="727" cy="96" r="26" fill="#fff4e9"/>
+    <g clip-path="url(#ball)" fill="none" stroke="#713619" stroke-width="2.2">
+      <path d="M726 94c-7-9-11-17-10-27m10 27c12-1 23-5 32-14m-32 14c-4 12-2 23 5 33"/>
+      <path d="M731 89c10-1 19-5 25-11m-33 23c-6-7-11-17-12-27m22 22c-3 11-2 20 3 27"/>
+    </g>
+    <g font-family="system-ui, -apple-system, 'Segoe UI', sans-serif">
+      <rect x="42" y="43" width="22" height="3" rx="1.5" fill="#ffae7d"/>
+      <text x="77" y="49" fill="#ffbd96" font-size="15" font-weight="700" letter-spacing="2.7">VÔLEI 3D NO NAVEGADOR</text>
+      <text x="38" y="146" fill="#fff5e9" font-size="88" font-weight="750" letter-spacing="-4">SkyKyuu</text>
+      <text x="44" y="193" fill="#d3dce6" font-size="27" font-weight="500">Wings Over the Court</text>
+    </g>
+  </g>
+</svg>

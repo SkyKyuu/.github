@@ -18,9 +18,9 @@ No futuro, o SkyKyuu também pode ganhar uma versão em aplicativo.
 
 ## Diário de quadra
 
-<img src="https://raw.githubusercontent.com/SkyKyuu/.github/main/profile/assets/commits.svg" alt="Commits mensais do frontend e do backend, respectivamente. Agosto de 2026: 35 e 20. Setembro: 8 e 8. Outubro: 11 e 10. Novembro até o dia 5: 1 e 0." width="896">
+<img src="https://raw.githubusercontent.com/SkyKyuu/.github/refs/heads/codex/profile-commit-chart/profile/assets/commits.svg" alt="Gráfico de commits mensais do frontend e do backend nos últimos quatro meses." width="896">
 
-<sub>Retrato de 5 de novembro de 2026. A contagem inclui merges das branches principais e agrupa os commits pelo mês registrado no Git. Históricos do <a href="https://github.com/SkyKyuu/skykyuu-frontend/commits/main/">frontend</a> e do <a href="https://github.com/SkyKyuu/skykyuu-backend/commits/main/">backend</a>.</sub>
+<sub>Atualização diária. O gráfico conta os commits das branches principais do <a href="https://github.com/SkyKyuu/skykyuu-frontend/commits/main/">frontend</a> e do <a href="https://github.com/SkyKyuu/skykyuu-backend/commits/main/">backend</a>, incluindo merges.</sub>
 
 ### Quem constrói o jogo
 
